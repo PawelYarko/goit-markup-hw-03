@@ -1,0 +1,243 @@
+:root {
+  /* background colors */
+  --bg-color-grey: #2f303a;
+  --bg-color-white: #ffffff;
+  --bg-color-light-grey: #e5e5e5;
+  --bg-color-white-solid: #f5f4fa;
+
+  /* text colors */
+  --accent-color-blue: #2196f3;
+  --text-color-black: #212121;
+  --text-color-grey: #757575;
+  --text-color-white: #ffffff;
+  --text-color-black-transparent: rgba(255, 255, 255, 0.6);
+}
+
+/* list fix */
+
+.list {
+  list-style-type: none;
+}
+
+/* link fix */
+
+.link {
+  text-decoration: none;
+  color: var(--text-color-black);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color-blue);
+}
+
+/* button */
+
+.button {
+  font-family: inherit; /* зачем это нужно? Саша Репета сказал, я написал. Но зачем это нужно не понимаю. Буду благодарен за ответ. */
+
+  background-color: var(--bg-color-white-solid);
+  color: var(--text-color-black);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color-blue);
+  color: var(--bg-color-white);
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 16px;
+  line-height: 1.2;
+
+  color: var(--text-color-black);
+}
+
+/* HEADER */
+
+.nav-logo {
+  font-family: "Raleway";
+  font-weight: 900;
+  font-size: 26px;
+
+  color: var(--text-color-black);
+
+  text-decoration: none;
+}
+
+.nav-logo-color {
+  color: var(--accent-color-blue);
+}
+
+.nav-list-item {
+  color: var(--text-color-black);
+
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.link-contact {
+  color: var(--text-color-grey);
+
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+}
+
+/* PORTFOLIO ACTIVE */
+
+.active-btn {
+  color: var(--accent-color-blue);
+}
+
+/* HERO */
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-btn {
+  padding: 10px 32px;
+
+  background-color: var(--accent-color-blue);
+  color: var(--text-color-white);
+
+  text-decoration: none;
+}
+
+/* FEATURES  */
+
+.features,
+.about {
+  background-color: var(--bg-color-light-grey);
+}
+
+.features-box-title {
+  color: var(--text-color-black);
+
+  font-weight: 700;
+  font-size: 14px;
+
+  text-transform: uppercase;
+}
+
+.features-box-text {
+  color: var(--text-color-grey);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ABOUT OUR WORK */
+
+.about-title {
+  margin: 0;
+
+  color: var(--text-color-black);
+
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* OUR TEAM */
+
+.team {
+  background-color: var(--bg-color-white-solid);
+}
+
+.team-member-bg {
+  max-width: 270px;
+
+  background-color: var(--bg-color-white);
+
+  text-align: center;
+}
+
+.team-title {
+  margin: 0;
+
+  color: var(--text-color-black);
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.team-member {
+  color: var(--text-color-black);
+}
+
+.team-profession {
+  color: var(--text-color-grey);
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 60px 20px;
+  background-color: var(--bg-color-grey);
+}
+
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 26px;
+
+  color: var(--text-color-white);
+
+  text-decoration: none;
+}
+
+.footer-address-city {
+  color: var(--text-color-white);
+
+  font-style: normal;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--text-color-black-transparent);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/*--------- PORTFOLIO ---------- */
+
+/* PORTFOLIO PROJECTS */
+
+.filter-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.project-text {
+  color: var(--text-color-grey);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+}

@@ -158,6 +158,7 @@ p {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
@@ -170,7 +171,6 @@ p {
 
 .hero-btn {
   display: inline-block;
-  align-items: center;
   margin-top: 30px;
   padding: 10px 32px;
 
@@ -210,7 +210,7 @@ p {
 .features-box {
   display: flex;
   flex-direction: row;
-
+  margin: 0px;
   padding-left: 0px;
 }
 
@@ -239,6 +239,7 @@ p {
 .about-list {
   display: flex;
   padding-left: 0px;
+  margin: 0px;
 }
 
 .about-list-item:not(:last-child) {
@@ -294,7 +295,7 @@ p {
 /* FOOTER */
 
 .footer {
-  padding: 60px 20px;
+  padding: 60px 0px;
   background-color: var(--bg-color-grey);
 }
 
@@ -343,7 +344,9 @@ p {
 
 /* PORTFOLIO PROJECTS */
 
-.filter-container {
+.project {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filter-list {
@@ -351,7 +354,7 @@ p {
   flex-direction: row;
   justify-content: center;
   padding-left: 0px;
-  margin-top: 94px;
+  margin-top: 0px;
   margin-bottom: 56px;
 }
 .filter-list-item {
@@ -385,6 +388,11 @@ p {
 
 .portfolio-list-item {
   margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
 
 .project-name {

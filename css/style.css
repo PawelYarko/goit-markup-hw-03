@@ -11,6 +11,10 @@
   --text-color-grey: #757575;
   --text-color-white: #ffffff;
   --text-color-black-transparent: rgba(255, 255, 255, 0.6);
+
+  /* border colors */
+  --border-grey: #eeeeee;
+  --border-grey-light: #ececec;
 }
 
 /* list fix */
@@ -86,6 +90,7 @@ p {
 
 .nav {
   display: flex;
+  border-bottom: 1px solid var(--border-grey-light);
 }
 .nav-list {
   margin-right: auto;
@@ -395,7 +400,13 @@ p {
   margin-bottom: 0px;
 }
 
+.portfolio-list-box {
+  padding: 20px 24px;
+  border: 1px solid var(--border-grey);
+}
+
 .project-name {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
